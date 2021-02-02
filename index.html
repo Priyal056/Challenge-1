@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', sans-serif;
+      
+    }
+    
+    .container {
+      height: 350px;
+      width: 350px;
+      margin: 120px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box1 {
+      position: absolute;
+      top: 125px;
+      width: 350px;
+      height: 120px;
+
+    }
+
+    .box1 img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+    }
+  
+    .box2 {
+      position: absolute;
+      top: 220px;
+      width: 350px;
+      background-color: white;
+      height: 250px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    
+
+    .box2 img {
+      position: relative;
+    top: 5px;
+    display: block;
+    border-radius: 50px;
+    width: 100px;
+    margin: auto;
+
+    }
+    #image-container{
+      position: relative;
+    top: -54px;
+    display: block;
+    border-radius: 50px;
+    width: 105px;
+    margin: auto;
+    background-color: white;
+      
+
+    }
+
+    .attribution {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    h4 {
+      color: hsl(0, 0%, 59%);
+      margin: 10px 145px;
+    }
+    span{
+      color:hsl(0, 0%, 59%) ;
+    }
+    h3{
+      padding: 3px;
+    width: 250px;
+    margin: auto;
+    margin-top: -30px;
+    margin-left: 106px;
+    }
+    .last-items{
+      display: flex;
+
+    }
+
+    .last-items h3{
+     
+      margin: 30px;
+      padding: 10px;
+    }
+    .last-para{
+      display: flex;
+    }
+
+#para-1 {
+    margin-left: 18px;
+    margin-top: -50px;
+    font-size: 0.8rem;
+    color: grey;
+    padding: 14px;
+    }
+    #para-2{
+      margin-left: 45px;
+    margin-top: -50px;
+    font-size: 0.8rem;
+    color: grey;
+    padding: 14px; 
+    }
+    #para-3{
+    margin-left: 62px;
+    margin-top: -50px;
+    font-size: 0.8rem;
+    color: grey;
+    padding: 14px; 
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/bg-pattern-top.svg" alt="" >
+    <img src="images/bg-pattern-bottom.svg" alt="" >
+
+    <div class="box1">
+      <img src="images/bg-pattern-card.svg" alt="">
+
+    </div>
+    <div class="box2">
+      <div id="image-container">
+      <img src="images/image-victor.jpg" alt="">
+      </div>
+      <h3>Victor Crest  <span>26</span> </h3>
+      <h4>London</h4>
+  
+      <div class="last-items">
+      <h3>80K</h3>
+      <h3>803K</h3>
+      <h3>1.4K</h3>
+    </div>
+    <div class="last-para">
+      <p id="para-1">Followers</p> 
+      <p id="para-2" >Likes</p> 
+      <p id="para-3">Photos</p>
+    </div>
+    
+
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Priyal Jain</a>.
+  </div>
+</body>
+
+</html>
